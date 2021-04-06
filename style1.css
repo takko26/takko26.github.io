@@ -1,0 +1,163 @@
+    	body {
+    background-image: url(img/bg1.png);
+    color: #ffffff;
+    background-color: #222222;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    font-size: 1em;
+	}
+		.title1 {
+	text-shadow: 2px 2px black;
+	box-shadow: 2px 2px black;
+	margin: auto;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	margin-bottom: 4px;
+    max-width: 70%;
+    border-radius: 20px;
+    background: url(img/bg2.png) center center;
+    box-shadow: 2px 2px 4px 0px black;
+		}
+		.center {
+	background-color: #241d2b;
+	padding: 30px;
+	border-radius: 20px;
+	border: solid 4px #664b74;
+    margin: auto;
+    max-width: 70%;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+		}
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+		.status {
+	background-color: #403050;
+	margin: 5px;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+		}
+	.overfl {
+		overflow-x: auto;
+	}
+	.commimg{
+		width: 100%;
+		max-width: 250px;
+		display: block;
+	  	margin-left: auto;
+  		margin-right: auto;
+	}
+	#comminfo {
+		border-collapse: collapse;
+  		width: 100%;
+  		border: solid; 
+  		border-color: #0D0D0D;
+	}
+	#comminfo td {
+  		border: 1px solid gray;
+  		vertical-align: top;
+		text-align: center;
+	}
+	.tdup {
+	background: #0D0D0D; 
+	border-color: #0D0D0D;
+	padding: 0cm 5.4pt 0cm 5.4pt;
+		}
+	.tdleft {
+	font-size: 13px;
+	font-style: italic;
+	width: max-content;
+	padding: 8px;
+	background: gray;
+		}
+	.tdright {
+	background: #404040;
+	width: 200px;
+		}
+	.tdright:hover {
+		background-color: #0D0D0D;
+	}
+	.butt1 {
+	font-size: 20px;
+	border: 2px solid;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+    text-decoration: none;
+    font-size: 3vw;
+    display: block;
+    width: 50%;
+    margin-bottom: 5px;
+		}
+	.redb {
+    background-color: #a61a41;
+    border-color: #421932;
+	}
+	.greb {
+    background-color: #39c97f;
+    border-color: #0e6d7b;
+	}
+	.twit {
+	background-color: #1da1f2;
+	border-color: #1da1f2;
+	}
+	.tumb {
+    background-color: #314358;
+	border-color: #0e1721;
+		}
+	.newg {
+    background-color: black;
+		}
+	.icon {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    vertical-align: middle;
+	}
+	.icontako {
+    width: 100px;
+    height: 100px;
+	margin-right: 10px;
+    vertical-align: middle;
+	border: 3px solid #fda238;
+	box-shadow: 2px 2px 4px 0px black;
+    border-radius: 100%;
+	}
+
+@media screen and (max-width: 600px) {
+		.title1 {
+	text-shadow: 2px 2px black;
+	box-shadow: 2px 2px black;
+	margin: auto;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 3vw;
+	margin-bottom: 4px;
+    max-width: 75%;
+    border: 3px solid #fda238;
+    border-radius: 20px;
+    background: url(img/bg2.png) center center;
+    box-shadow: 2px 2px 4px 0px black;
+		}
+		.center {
+	background-color: #241d2b;
+	padding: 15px;
+	border-radius: 20px;
+	border: solid 4px #664b74;
+    margin: auto;
+    max-width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+		}
+}
