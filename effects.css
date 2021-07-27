@@ -1,0 +1,136 @@
+.hpbar {
+	margin: 2px auto 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+	background: #ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+}
+.bar {
+	background: #46c058;
+	width: 100%;
+	height: 10px;
+	position: relative;
+	transition: width .5s steps(16, end);
+}
+.typewriter {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: typing 2s steps(30, end);
+  }
+  /* The typing effect */
+@keyframes typing {
+	from { width: 0; }
+	to { width: 100%; }
+}
+@media screen and (min-width: 600px) {
+	.takomenu {
+		float: right;
+		overflow: hidden;
+	}
+	.takomenu nav {
+		margin: 37px auto 0;
+		position: relative;
+		height: 70px;
+		background: linear-gradient(180deg,  #402149, #51395e);
+		border-radius: 25px;
+	}
+	.takomenu nav a {
+		line-height: 70px;
+		height: 100%;
+		font-size: 15px;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+	}
+	.takomenu nav .animation {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		z-index: 0;
+		transition: background-color .5s ease 0s;
+		border-radius: 25px;
+	}
+	.takomenu a:nth-child(1) {
+		width: 100px;
+		border-radius: 25px;
+	}
+	.takomenu a:nth-child(2) {
+		width: 300px;
+		border-radius: 25px;
+	}
+	.takomenu a:nth-child(3) {
+		width: 120px;
+		border-radius: 25px;
+	}
+	.takomenu nav a:nth-child(1):hover~.animation {
+		width: 100px;
+		left: 0;
+		background-color: #e87144;
+	}
+	.takomenu nav a:nth-child(2):hover~.animation {
+		width: 300px;
+		left: 100px;
+		background-color: #e74c3c;
+	}
+	.takomenu nav a:nth-child(3):hover~.animation {
+		width: 120px;
+		left: 400px;
+		background-color: #e84495;
+	}
+}
+@media screen and (max-width: 600px) {
+	.takomenu {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+	.takomenu nav {
+		margin: 2px auto 0;
+		background: linear-gradient(180deg,  #402149, #51395e);
+		border-radius: 25px;
+	}
+	.takomenu nav a {
+		padding: 0px 7px 0px 7px;
+		border-radius: 20px;
+		line-height: 70px;
+		font-size: 10px;
+		display: inline;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+	}
+	.takomenu ul {
+		list-style-type: none;
+	  	margin: 0;
+	  	padding: 0;
+	  	overflow: hidden;
+	}
+	.takomenu li {
+		display: inline;
+		float: left;
+	}
+	.takomenu li a {
+		display: block;
+		padding: 8px;
+		border-radius: 20px;
+		background-color: #442147;
+	    box-shadow: 0px 2px 1px 0px #ffe94e;
+	}
+	.takomenu li a:hover {
+	  background-color: #ffe94e;
+	}
+}
