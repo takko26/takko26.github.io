@@ -233,6 +233,13 @@ body {
   	flex: 1;
   	padding: 10px;
 }
+.columnside {
+	max-width: 25%;
+	-webkit-flex: 1;
+  	-ms-flex: 1;
+  	flex: 1;
+	 padding: 10px;
+}
 .takoindex {
 	box-sizing: border-box;
 	padding: 30px;
@@ -431,5 +438,8 @@ body {
 		height: 2em;
     	font-size: 1em;
     	font-weight: 700;
+	}
+	.columnside {
+		max-width: 100%;
 	}
 }
