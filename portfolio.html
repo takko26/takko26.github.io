@@ -6,122 +6,337 @@
 	<meta charset="utf-8">
 	<title>Commission Information</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="style1.css" rel="stylesheet">
-	<link href="effects.css" rel="stylesheet">
+    <link href="resources/css/style1.css" rel="stylesheet">
+    <link href="resources/css/effects.css" rel="stylesheet">
+    <link href="resources/css/modals.css" rel="stylesheet">
 </head>
 
 <body>
 	<div id="buildheader"></div>
-	<div class="centerblock Ubuntufont whitetxt">
-		<h2>Digital Art</h2>
-		<ul class="tabs ubuntufont">
-			<li><a href="#" rel="#default" class="selected">Icons & Emotes</a></li>
-			<li><a href="#" rel="#iframe">Illustrations</a></li>
-			<li><a href="#" rel="#iframe">Character design</a></li>
-			<li><a href="#" rel="#iframe">Graphic design</a></li>
-			<li><a href="#" rel="#iframe">Pixel Art</a></li>
-		</ul>
+	<div class="centerblock whitetxt ubuntufont">
+		<div class="textpadding">
+			<div id="examp" class="colorsection">
+				<h1 id="chdesign"> Portfolio
+					<div class="tabcontainer">
+						<div class="tab">
+						<button class="tablinks ubuntufont" onclick="openTab(event, 'bust')">Bust/Icon</button>
+						<button class="tablinks ubuntufont" onclick="openTab(event, 'fullbod')" id="defaultOpen">Full-Body</button>
+						<button class="tablinks ubuntufont" onclick="openTab(event, 'ev1')">Reference Sheet</button>
+						<button class="tablinks ubuntufont" onclick="openTab(event, 'ev2')">Character Design</button>
+						<button class="tablinks ubuntufont" onclick="openTab(event, 'ev3')">3d Model</button>
+						<button class="tablinks ubuntufont" onclick="openTab(event, 'ev4')">Pixel Art</button>
+						</div>
+					</div>
+				</h1>
+				<div id="bust" class="tabcontent">
+					<div class="gallery-1">
+						<h2> <div class="textcenter"><p>Flat colors &nbsp; <img class="iconbootstrap" src="resources/img/ico/arrow-down-circle-fill.svg" width="32" height="32"></p></div> </h2>
+						<div class="row">
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/a1.png">
+									<img src="resources/img/portfolio/icons/a1.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/a2.png">
+									<img src="resources/img/portfolio/icons/a2.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/a3.png">
+									<img src="resources/img/portfolio/icons/a3.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>@RosaNook</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-1">
+						<h2> <div class="textcenter"><p>Cel-shaded</p></div> </h2>
+						<div class="row">
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/b1.png">
+									<img src="resources/img/portfolio/icons/b1.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/b2.png">
+									<img src="resources/img/portfolio/icons/b2.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>Commissioned by @Tasiturney</p></div>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/b3.png">
+									<img src="resources/img/portfolio/icons/b3.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>@RosaNook</p></div>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/b4.png">
+									<img src="resources/img/portfolio/icons/b4.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>@RosaNook</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-1">
+							<h2> <div class="textcenter"><p>Detailed/brush-shaded</p></div> </h2>
+						<div class="row">
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/c1.png">
+									<img src="resources/img/portfolio/icons/c1.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>@Ironmouse</p></div>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/c2.png">
+									<img src="resources/img/portfolio/icons/c2.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>Commissioned by @Tasiturney</p></div>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/icons/c3.png">
+									<img src="resources/img/portfolio/icons/c3.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="fullbod" class="tabcontent">
+					<div class="gallery-1">
+						<h2> <div class="textcenter"><p>Flat colors &nbsp; <img class="iconbootstrap" src="resources/img/ico/arrow-down-circle-fill.svg" width="32" height="32"></p></div> </h2>
+						<div class="row">
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/colored/1.png">
+									<img src="resources/img/portfolio/fbody/colored/1.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/colored/2.png">
+									<img src="resources/img/portfolio/fbody/colored/2.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/colored/3.png">
+									<img src="resources/img/portfolio/fbody/colored/3.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/colored/5.png">
+									<img src="resources/img/portfolio/fbody/colored/5.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/colored/6.png">
+									<img src="resources/img/portfolio/fbody/colored/6.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-1">
+						<h2> <div class="textcenter"><p>Cel-shaded</p></div> </h2>
+						<div class="row">
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/shaded/1.png">
+									<img src="resources/img/portfolio/fbody/shaded/1.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/shaded/2.png">
+									<img src="resources/img/portfolio/fbody/shaded/2.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/shaded/3.png">
+									<img src="resources/img/portfolio/fbody/shaded/3.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/shaded/4.png">
+									<img src="resources/img/portfolio/fbody/shaded/4.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/shaded/5.png">
+									<img src="resources/img/portfolio/fbody/shaded/5.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>@Atrox-C</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-1">
+						<h2> <div class="textcenter"><p>Detailed/brush-shaded</p></div> </h2>
+						<div class="row">
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/painted/1.png">
+									<img src="resources/img/portfolio/fbody/painted/1.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/painted/2.png">
+									<img src="resources/img/portfolio/fbody/painted/2.png" alt="Icon1" class="responsive examplepic">
+								</a>
+								<div class="textcenter"><p>@BatatVideogames</p></div>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/painted/3.png">
+									<img src="resources/img/portfolio/fbody/painted/3.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/painted/5.png">
+									<img src="resources/img/portfolio/fbody/painted/5.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+							<div class="column">
+								<a target="_blank" href="resources/img/portfolio/fbody/painted/7.png">
+									<img src="resources/img/portfolio/fbody/painted/7.png" alt="Icon1" class="responsive examplepic">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-		<div class="galleryblock">
-			<div class="galleryrow textcenter">
-				<div class="gallerycolumn">
-					<img src="img/icons/icon2.png">
-					<img src="img/icons/icon3.png">
-					<img src="img/icons/icon4.png">
-					<img src="img/icons/icon5.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/icons/icon1.png">
-					<img src="img/icons/icon6.png">
-					<img src="img/icons/icon7.png">
-					<img src="img/icons/icon8.png">
+				<div class="colorsection-padding">
+					<div id="ev1" class="tabcontent">
+						<div class="gallery-1">
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/rs1.png">
+										<img src="resources/img/portfolio/other/rs1.png" alt="Icon1" class="responsive examplepic">
+									</a>
+									<div class="textcenter"><p>Commissioned by @Senterami</p></div>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/rs2.png">
+										<img src="resources/img/portfolio/other/rs2.png" alt="Icon1" class="responsive examplepic">
+									</a>
+									<div class="textcenter"><p>Commissioned by @Tasiturney</p></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/rs3.png">
+										<img src="resources/img/portfolio/other/rs3.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/rs4.png">
+										<img src="resources/img/portfolio/other/rs4.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ev2" class="tabcontent">
+						<div class="gallery-1">
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/cd2.png">
+										<img src="resources/img/portfolio/other/cd2.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/cd3.png">
+										<img src="resources/img/portfolio/other/cd3.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/cd1.png">
+										<img src="resources/img/portfolio/other/cd1.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/cd5.png">
+										<img src="resources/img/portfolio/other/cd5.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/cd4.png">
+										<img src="resources/img/portfolio/other/cd4.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ev3" class="tabcontent">
+						<div class="gallery-1">
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/3d1.png">
+										<img src="resources/img/portfolio/other/3d1.png" alt="Icon1" class="responsive examplepic">
+									</a>
+									<div class="textcenter"><p>@BatatVideogames</p></div>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/3d2.png">
+										<img src="resources/img/portfolio/other/3d2.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ev4" class="tabcontent">
+						<div class="gallery-1">
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr1.png">
+										<img src="resources/img/portfolio/other/spr1.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr2.png">
+										<img src="resources/img/portfolio/other/spr2.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr3.png">
+										<img src="resources/img/portfolio/other/spr3.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr4.png">
+										<img src="resources/img/portfolio/other/spr4.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr6.png">
+										<img src="resources/img/portfolio/other/spr6.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr5.png">
+										<img src="resources/img/portfolio/other/spr5.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr7.png">
+										<img src="resources/img/portfolio/other/spr7.png" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr8.gif">
+										<img src="resources/img/portfolio/other/spr8.gif" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+								<div class="column">
+									<a target="_blank" href="resources/img/portfolio/other/spr8a.gif">
+										<img src="resources/img/portfolio/other/spr8a.gif" alt="Icon1" class="responsive examplepic">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-<!-- 
-		<div class="galleryblock">
-			<div class="galleryrow textcenter">
-				<div class="gallerycolumn">
-					<img src="img/colored/colored2.png">
-					<img src="img/colored/colored3.png">
-					<img src="img/colored/colored4.png">
-					<img src="img/colored/colored5.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/colored/colored1.png">
-					<img src="img/colored/colored6.png">
-					<img src="img/colored/colored7.png">
-					<img src="img/colored/colored8.png">
-				</div>
-			</div>
-		</div>
-		<div class="galleryblock">
-			<div class="galleryrow textcenter">
-				<div class="gallerycolumn">
-					<img src="img/painted/painted2.png">
-					<img src="img/painted/painted3.png">
-					<img src="img/painted/painted4.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/painted/painted1.png">
-					<img src="img/painted/painted6.png">
-					<img src="img/painted/painted5.png">
-				</div>
-			</div>
-		</div>
-		<div class="galleryblock">
-			<div class="galleryrow textcenter">
-				<div class="gallerycolumn">
-					<img src="img/other/cd2.png">
-					<img src="img/other/cd4.png">
-					<img src="img/other/cd1.png">
-					<img src="img/other/cd7.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/other/cd3.png">
-					<img src="img/other/cd5.png">
-					<img src="img/other/cd6.png">
-					<img src="img/other/cd8.png">
-				</div>
-			</div>
-		</div>
-		<div class="galleryblock">
-			<div class="galleryrow textcenter">
-				<div class="gallerycolumn">
-					<img src="img/other/gd1.png">
-					<img src="img/other/gd3.png">
-					<img src="img/other/gd5.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/other/gd2.png">
-					<img src="img/other/gd4.png">
-				</div>
-			</div>
-		</div>
-		<div class="galleryblock">
-			<div class="galleryrow textcenter">
-				<div class="gallerycolumn">
-					<img src="img/other/spr5.png">
-					<img src="img/other/spr2.png">
-					<img src="img/other/spr3.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/other/spr1.png">
-					<img src="img/other/spr6.png">
-					<img src="img/other/spr9.png">
-					<img src="img/other/spr4.png">
-				</div>
-				<div class="gallerycolumn">
-					<img src="img/other/spr8.gif">
-					<img src="img/other/spr8a.gif">
-					<img src="img/other/spr10.png">
-				</div>
-			</div>
-		</div>
- -->
 	</div>
 	<!-- Scripts-->
-	<script src="scripts.js"> </script>
+	<script src="resources/js/scripts.js"> </script>
+    <script src="resources/js/modals.js"> </script>
 </body>
 
 </html>
