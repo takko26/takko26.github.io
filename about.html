@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Takotito</title>
+    <title>Takkotito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="resources/css/style1.css" rel="stylesheet">
     <link href="resources/css/effects.css" rel="stylesheet">
@@ -16,26 +16,23 @@
     <div class="centerblock whitetxt" style="background-image: url( resources/img/bg3.png)">
         <div class="textpadding">
             <div class="aboutme ubuntufont">
-                <h1>ABOUT ME</h1>
+                <h1 class="abouttitle">ABOUT ME</h1>
         <div class="row">
             <div class="column">
                 <div class="rpg textcenter">
-                    <div class="hpbar">
-                        <div id="action" class="bar">
+                    <div id="hpsprite" class="hpsprite">
+                        <div id="hpbar" class="hpbar">
+                            <div id="action" class="bar">
+                            </div>
                         </div>
                     </div>
                     <div id="tako" class="takopic"></div>
-                    <div class="dialogbox">
-                        <div class="typewriter pixelfont">
-                            A wild Takko appeared!
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="column">
                 <div class="aboutme-stats pixelfont">
                     <h1>TAKKO<br>HE/HIM</h1>
-                    <p>HP:86</p>
+                    <p>HP:<a id="hp-p">86</a>/86</p>
                     <p>AT:20</p>
                     <p>SA:12</p>
                     <p>SD:10</p>
@@ -43,12 +40,20 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="dialogbox">
+                <div id="dialogue" class="typewriter pixelfont">
+                    A wild Takko appeared!
+                </div>
+            </div>
+        </div>
                 <div class="aboutme-text">
-                    <p>Hey! I go online by Takotito, but my friends call me Takko.</p>
-                    <p>I'm a mexican artist and programmer currently studying Computer Systems Engineering and learning
-                        to draw digitally on my free time, among other things. 
-                        I specialize in drawing cartoony artwork with a focus on fun and appealing character design, 
-                        to see examples of my work please visit my portfolio.</p>
+                    <p>Hey! I go online by Takkotito, but my friends call me Takko.</p>
+                    <p>I'm a mexican artist and programmer studying Computer Systems Engineering. <br>
+                        I like to draw mostly in my free time and I'm fully self-taught, so don't expect too much out of me! <br> 
+                        My focus is on drawing cartoony artwork with appealing & marketable character designs, <br>
+                        for personal use only at the moment, but I'd like to work on a commercial project one day. <br>
+                        To see examples of my work please visit my <a class="menulink" href="portfolio.html">portfolio</a>!</p>
                     <p>I primarily speak Spanish/English but I'm open to learning more languages down the road.</p>
                     <div>
                         <ul>Current projects:
