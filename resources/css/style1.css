@@ -9,11 +9,13 @@ body {
 }
 .banner-tako {
 	background-image: url( ../img/banner-sm.png);
-	background-size: cover;
-	border-bottom: solid 4px #111021;
+	background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+    border-bottom: solid 4px #111021;
     margin: 0px;
     padding: 30px;
-    height: 320px;
+    height: 15vw;
 }
 /*Fonts*/
 /*-------------------------------------------------------------------------*/
@@ -64,6 +66,7 @@ body {
 .nav-text-main {
     font-size: 26px;
     font-weight: 700;
+	text-decoration: none;
   }
 .nav-text-md {
     font-size: 14px;
@@ -80,10 +83,12 @@ body {
 /*-------------------------------------------------------------------------*/
 .tabla-1 {
 	width: 100%;
-	overflow: hidden;
+    width: -webkit-fill-available;
+    overflow: hidden;
     vertical-align: bottom;
     line-height: inherit;
-	padding: 4px;
+    padding: 25px;
+    margin: 13px;
 	table-layout: auto;
     border: 1px #e5e5e5 solid;
     border-color: rgba(0,0,0,0.15);
@@ -238,14 +243,15 @@ body {
 	transition-duration: 0.3s;
 }
 .homesection {
-	background-color: #714483;
-	border: 4px solid #2A0C41;
-	margin: 5px;
-	margin-top: 15px;
-	padding-bottom: 5px;
-	border-radius: 5px;
-	overflow: hidden;
-	position: relative;
+	background-color: #9C66C5;
+    /* border: 4px solid #2A0C41; */
+    box-shadow: -8px 8px #6a299d;
+    margin: 5px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 .homesection h1 {
 	margin: 0;
@@ -256,7 +262,7 @@ body {
 	position: relative;
 }
 .button-home {
-	font-size: 30px;
+	font-size: 2em;
 	font-weight: 700;
     border-bottom: 2px solid;
     border-radius: 10px;
@@ -285,6 +291,7 @@ body {
 	background-color: #9C66C5;
 }
 .column-home {
+	overflow-x: clip;
  	-webkit-flex: 1;
   	-ms-flex: 1;
   	flex: 1;
@@ -295,6 +302,27 @@ body {
 .kofi-btn {
 	text-align: center;
 	padding: 20px;
+	border-radius: 10px;
+}
+.kofi-btn:hover {
+	margin: 5px;
+	background-color: #9C66C5;
+	transition-duration: 0.3s;
+}
+.rowscroll {
+	justify-content: flex-start;
+    overflow-x: overlay;
+}
+.rowsidehor {
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+.lowerbar {
+	background: #3f155f;
+	background: linear-gradient(0deg, rgba(36,21,56,1) 0%, rgba(63,21,95,1) 33%);
+	margin-top: 1em;
 }
 /*Commission-Info Components*/
 /*-------------------------------------------------------------------------*/
@@ -352,6 +380,7 @@ body {
 }
 .colorsection {
 	background-color: #714483;
+	box-shadow: -4px 4px #a36cba;
 	margin: 5px;
 	margin-top: 15px;
 	padding-bottom: 5px;
@@ -413,8 +442,9 @@ body {
 }
 .gallery-1 {
 	background-color: #54296a;
-	border-top: 10px solid;
 	border-color:  #714483;
+	margin-top: 18px;
+    border-radius: 30px;
 	padding: 3px;
 }
 .gallery-1 .row {
@@ -489,7 +519,7 @@ body {
   	flex: 1;
 }
 .tablinks {
-	font-size: 18px;
+	font-size: 1vw;
     border: none;
   	outline: none;
     border-radius: 6px;
@@ -593,6 +623,24 @@ body {
 	vertical-align: middle;
 	width: 100%;
 }
+@media screen and (max-width: 1350px) {
+	.button-home {
+		font-size: 2.5vw;
+	}
+	.aboutme .row {
+		flex-direction: column;
+	}
+	.takopic {
+		vertical-align: middle;
+		margin-top: 15px;
+		width: 515px;
+		height: 456px;
+		display: inline-block;
+		background: url(../img/ico/takko22_sprsheet.png);
+		background-position: 0 0;
+		zoom: 50%;
+	}
+}
 
 @media screen and (max-width: 820px) {
 	.navbar-main, .navbar-back {
@@ -626,6 +674,10 @@ body {
 		-webkit-flex-direction: column;
 		flex-direction: column;
 	}
+	.rowsidehor {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
 	.center {
 		background-color: #241d2b;
 		border-radius: 20px;
@@ -655,7 +707,7 @@ body {
 	    padding-bottom: 8px;
 	}
 	.banner-tako {
-		height: 100px;
+		height: 20vw;
 	}
 	.columnside {
 		align-self: center;
@@ -674,6 +726,7 @@ body {
 	  	padding-left: 10px;
 	}
 	.button-home {
+		font-size: 1.7em;
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -709,5 +762,8 @@ body {
 	}
 	.kofi-btn {
 		padding: 0px;
+	}
+	.tablinks {
+		font-size: 2vw;
 	}
 }
